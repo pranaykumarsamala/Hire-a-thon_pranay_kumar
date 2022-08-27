@@ -1,1 +1,181 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.header-wrapper {
+    background-image: url(./assets/header-bg-img.svg);
+    width: auto;
+    height: auto;
+    background-position: center;
+
+    .navigation-bar {
+        .custom-nav-bar {
+            margin: auto;
+            flex-grow: 0;
+            margin-left: 30%;
+
+            ul {
+                .add-listening-item {
+                    background-color: #a6b322;
+                    border-radius: 3%;
+                    padding: 0px 10px;
+
+                    .free-text {
+                        background-color: #ffffff;
+                        padding: 0px 4px;
+                        border-radius: 3%;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            padding-left: 5%;
+        }
+    }
+
+    .header-text-wrapper {
+        display: flex;
+
+        .header-promotion-text-wrapper {
+            ul {
+
+                li.active {
+                    color: #a6b322;
+                }
+
+                li {
+                    list-style-type: none;
+                    padding: 10px 10px;
+                    color: #464741;
+                    font-weight: 400;
+                }
+            }
+
+            width: 60%;
+
+            h1 {
+                span {
+                    color: #a6b322;
+                }
+            }
+
+            p {
+                color: #464741;
+
+            }
+
+            .button-wrapper {
+                button {
+                    border: 1px solid #a6b322;
+                    padding: 5px 10px;
+                    background: transparent;
+                    border-radius: 4%;
+
+                }
+
+                .book-now-btn {
+                    background-color: #a6b322;
+                }
+            }
+        }
+
+        .header-promotion-img-wrapper {
+            width: 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+.body-content-wrapper {
+
+    .space-around-section,
+    .blog-section {
+        .row {
+            .img-section {
+                padding: 0px 0px !important;
+
+                img {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    .container {
+        div {
+            h5 {
+                color: #525252;
+            }
+
+            ul {
+                padding-left: 3.1rem;
+
+                li {
+                    color: #525252;
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+.copy-right-section {
+    background-color: #333333;
+    justify-content: space-around;
+    color: #525252;
+}
+
+@media screen and (max-width:1024px) {
+    .navigation-bar {
+        .custom-nav-bar {
+            margin: auto;
+            flex-grow: 0;
+            margin-left: 20%;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header-wrapper {
+        .header-text-wrapper {
+            display: block;
+
+            .header-promotion-text-wrapper {
+                width: 100%;
+            }
+
+            .header-promotion-img-wrapper {
+                width: 100%;
+            }
+
+        }
+    }
+
+    .body-content-wrapper {
+
+        .space-around-section,
+        .blog-section {
+            .row {
+                .img-section {
+                    padding: 0px 0px 0px 17px !important;
+
+                }
+            }
+        }
+    }
+
+    .footer {
+        .container {
+            .footer-wrapper {
+                display: block !important;
+            }
+        }
+    }
+}

@@ -1,3 +1,23 @@
-<app-prblm-stmt1></app-prblm-stmt1>
+<!-- <app-prblm-stmt1></app-prblm-stmt1>
 
-<app-prblm-stmt2></app-prblm-stmt2>
+<app-prblm-stmt2></app-prblm-stmt2> -->
+
+<app-header></app-header>
+
+<div class="body-content-wrapper pt-5">
+    <div class="container space-around-section">
+        <div class="row">
+            <h1 class="pb-3">Spaces Around The World</h1>
+            <app-space-section [spaceSection]="spaceSection" class="d-flex"></app-space-section>
+        </div>
+    </div>
+
+    <div class="container blog-section pt-5">
+        <div class="row">
+            <!-- <h1 class="pb-3">Spaces Around The World</h1> -->
+            <app-update-section [updateSection]="blogSection" class="d-flex"></app-update-section>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
